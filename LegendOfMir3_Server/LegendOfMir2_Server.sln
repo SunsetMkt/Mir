@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AdminCmd", "AdminCmd\AdminCmd.vcxproj", "{AFF079FA-4DA7-4F5E-8C7D-41DDD3679B17}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DBSvr", "DBSvr\DBSvr.vcxproj", "{38514916-4043-42B2-91CD-4C77EC4E2D94}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameGate", "GameGate\GameGate.vcxproj", "{E8E14A1E-681B-4EBC-A220-6CD7AF148805}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameSvr", "GameSvr\GameSvr.vcxproj", "{CD83B523-C7C4-47F6-8BE9-12DFB8173F0E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoginGate", "LoginGate\LoginGate.vcxproj", "{CAA7A7E0-B30B-4E49-9678-B6F8BC470C6B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoginSvr", "LoginSvr\LoginSvr.vcxproj", "{3D3E4596-BD36-4ACE-8642-06388DF1B101}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SelGate", "SelGate\SelGate.vcxproj", "{3482F2D3-6279-40EB-AEA6-0A67F921F2EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFF079FA-4DA7-4F5E-8C7D-41DDD3679B17}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AFF079FA-4DA7-4F5E-8C7D-41DDD3679B17}.Debug|Win32.Build.0 = Debug|Win32
+		{AFF079FA-4DA7-4F5E-8C7D-41DDD3679B17}.Release|Win32.ActiveCfg = Release|Win32
+		{AFF079FA-4DA7-4F5E-8C7D-41DDD3679B17}.Release|Win32.Build.0 = Release|Win32
+		{38514916-4043-42B2-91CD-4C77EC4E2D94}.Debug|Win32.ActiveCfg = Debug|Win32
+		{38514916-4043-42B2-91CD-4C77EC4E2D94}.Debug|Win32.Build.0 = Debug|Win32
+		{38514916-4043-42B2-91CD-4C77EC4E2D94}.Release|Win32.ActiveCfg = Release|Win32
+		{38514916-4043-42B2-91CD-4C77EC4E2D94}.Release|Win32.Build.0 = Release|Win32
+		{E8E14A1E-681B-4EBC-A220-6CD7AF148805}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E8E14A1E-681B-4EBC-A220-6CD7AF148805}.Debug|Win32.Build.0 = Debug|Win32
+		{E8E14A1E-681B-4EBC-A220-6CD7AF148805}.Release|Win32.ActiveCfg = Release|Win32
+		{E8E14A1E-681B-4EBC-A220-6CD7AF148805}.Release|Win32.Build.0 = Release|Win32
+		{CD83B523-C7C4-47F6-8BE9-12DFB8173F0E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CD83B523-C7C4-47F6-8BE9-12DFB8173F0E}.Debug|Win32.Build.0 = Debug|Win32
+		{CD83B523-C7C4-47F6-8BE9-12DFB8173F0E}.Release|Win32.ActiveCfg = Release|Win32
+		{CD83B523-C7C4-47F6-8BE9-12DFB8173F0E}.Release|Win32.Build.0 = Release|Win32
+		{CAA7A7E0-B30B-4E49-9678-B6F8BC470C6B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CAA7A7E0-B30B-4E49-9678-B6F8BC470C6B}.Debug|Win32.Build.0 = Debug|Win32
+		{CAA7A7E0-B30B-4E49-9678-B6F8BC470C6B}.Release|Win32.ActiveCfg = Release|Win32
+		{CAA7A7E0-B30B-4E49-9678-B6F8BC470C6B}.Release|Win32.Build.0 = Release|Win32
+		{3D3E4596-BD36-4ACE-8642-06388DF1B101}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3D3E4596-BD36-4ACE-8642-06388DF1B101}.Debug|Win32.Build.0 = Debug|Win32
+		{3D3E4596-BD36-4ACE-8642-06388DF1B101}.Release|Win32.ActiveCfg = Release|Win32
+		{3D3E4596-BD36-4ACE-8642-06388DF1B101}.Release|Win32.Build.0 = Release|Win32
+		{3482F2D3-6279-40EB-AEA6-0A67F921F2EF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3482F2D3-6279-40EB-AEA6-0A67F921F2EF}.Debug|Win32.Build.0 = Debug|Win32
+		{3482F2D3-6279-40EB-AEA6-0A67F921F2EF}.Release|Win32.ActiveCfg = Release|Win32
+		{3482F2D3-6279-40EB-AEA6-0A67F921F2EF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

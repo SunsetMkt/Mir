@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0F0119F2-31C2-43F8-AE88-F4086DBE0D33}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.28307.799</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/Mir2Ex.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/Mir2Ex.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>C:\Mir2EI\Mir2EIRlz.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Release/Mir2EIRlz.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/Mir2Ex.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/Mir2Ex.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug/Mir2Ex.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\Debug\Mir2Ex.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/Mir2EI.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/Mir2Ex.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AVI\Avi.cpp" />
+    <ClCompile Include="CharSelectProcess\BackGround\BackGround.cpp" />
+    <ClCompile Include="CharSelectProcess\CharacterProcess.cpp" />
+    <ClCompile Include="CharSelectProcess\CreateChr\CreateChr.cpp" />
+    <ClCompile Include="CharSelectProcess\SelectChr\SelectChr.cpp" />
+    <ClCompile Include="Common\Button.cpp" />
+    <ClCompile Include="Common\ChatEditBox.cpp" />
+    <ClCompile Include="Common\ClientSocket.cpp" />
+    <ClCompile Include="Common\DblList.cpp" />
+    <ClCompile Include="Common\DLinkedList.cpp" />
+    <ClCompile Include="Common\EnDecode.cpp" />
+    <ClCompile Include="Common\ImageHandler.cpp" />
+    <ClCompile Include="Common\MirButton.cpp" />
+    <ClCompile Include="Common\MirMsgBox.cpp" />
+    <ClCompile Include="Common\MirMsgBox3D.cpp" />
+    <ClCompile Include="Common\MsgBox.cpp" />
+    <ClCompile Include="Common\NoticeBox.cpp" />
+    <ClCompile Include="Common\NPCTxtAnalysis.cpp" />
+    <ClCompile Include="Common\Queue.cpp" />
+    <ClCompile Include="GameProcess\Actor.cpp" />
+    <ClCompile Include="GameProcess\ChatPopWnd.cpp" />
+    <ClCompile Include="GameProcess\ClientSysMsg.cpp" />
+    <ClCompile Include="GameProcess\ExchangeWnd.cpp" />
+    <ClCompile Include="GameProcess\GameBtn.cpp" />
+    <ClCompile Include="GameProcess\GameProc.cpp" />
+    <ClCompile Include="GameProcess\GameWnd.cpp" />
+    <ClCompile Include="GameProcess\GroupPopWnd.cpp" />
+    <ClCompile Include="GameProcess\GroupWnd.cpp" />
+    <ClCompile Include="GameProcess\GuildMasterWnd.cpp" />
+    <ClCompile Include="GameProcess\GuildWnd.cpp" />
+    <ClCompile Include="GameProcess\HorseWnd.cpp" />
+    <ClCompile Include="GameProcess\Interface.cpp" />
+    <ClCompile Include="GameProcess\InventoryWnd.cpp" />
+    <ClCompile Include="GameProcess\Item.cpp" />
+    <ClCompile Include="GameProcess\LightFog.cpp" />
+    <ClCompile Include="GameProcess\Magic.cpp" />
+    <ClCompile Include="GameProcess\MapHandler.cpp" />
+    <ClCompile Include="GameProcess\NPCWnd.cpp" />
+    <ClCompile Include="GameProcess\OptionWnd.cpp" />
+    <ClCompile Include="GameProcess\Particle.cpp" />
+    <ClCompile Include="GameProcess\QuestWnd.cpp" />
+    <ClCompile Include="GameProcess\SprDfn.cpp" />
+    <ClCompile Include="GameProcess\StatusWnd.cpp" />
+    <ClCompile Include="GameProcess\StoreWnd.cpp" />
+    <ClCompile Include="GameProcess\WeatherEffect.cpp" />
+    <ClCompile Include="GFun.cpp" />
+    <ClCompile Include="LoginProcess\Common\BMWnd.cpp" />
+    <ClCompile Include="LoginProcess\Intro\LoginAvi.cpp" />
+    <ClCompile Include="LoginProcess\LoginProcess.cpp" />
+    <ClCompile Include="LoginProcess\Login\Login.cpp" />
+    <ClCompile Include="LoginProcess\New Account\NewAccount.cpp" />
+    <ClCompile Include="LoginProcess\Patch.cpp" />
+    <ClCompile Include="LoginProcess\Select Srv\SelectSrv.cpp" />
+    <ClCompile Include="Mir2Ex.cpp" />
+    <ClCompile Include="Sound\BMMP3.cpp" />
+    <ClCompile Include="Sound\MirSound.cpp" />
+    <ClCompile Include="Sound\SBuffer.cpp" />
+    <ClCompile Include="Sound\Sound.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AVI\Avi.h" />
+    <ClInclude Include="CharSelectProcess\BackGround\BackGround.h" />
+    <ClInclude Include="CharSelectProcess\CharacterProcess.h" />
+    <ClInclude Include="CharSelectProcess\Common\define.h" />
+    <ClInclude Include="CharSelectProcess\CreateChr\CreateChr.h" />
+    <ClInclude Include="CharSelectProcess\SelectChr\SelectChr.h" />
+    <ClInclude Include="Common\Button.H" />
+    <ClInclude Include="Common\ChatEditBox.h" />
+    <ClInclude Include="Common\ClientSocket.h" />
+    <ClInclude Include="Common\DblList.h" />
+    <ClInclude Include="Common\DLinkedList.h" />
+    <ClInclude Include="Common\EnDecode.h" />
+    <ClInclude Include="Common\ImageHandler.h" />
+    <ClInclude Include="Common\MirButton.h" />
+    <ClInclude Include="Common\MirMsgBox.h" />
+    <ClInclude Include="Common\MirMsgBox3D.h" />
+    <ClInclude Include="Common\MsgBox.h" />
+    <ClInclude Include="Common\NoticeBox.h" />
+    <ClInclude Include="Common\NPCTxtAnalysis.h" />
+    <ClInclude Include="Common\Protocol.h" />
+    <ClInclude Include="Common\Queue.h" />
+    <ClInclude Include="Common\Typedeftxt.h" />
+    <ClInclude Include="Define.h" />
+    <ClInclude Include="Extern.h" />
+    <ClInclude Include="GameProcess\Actor.h" />
+    <ClInclude Include="GameProcess\ChatPopWnd.h" />
+    <ClInclude Include="GameProcess\ClientSysMsg.h" />
+    <ClInclude Include="GameProcess\ExchangeWnd.h" />
+    <ClInclude Include="GameProcess\GameBtn.h" />
+    <ClInclude Include="GameProcess\GameProc.h" />
+    <ClInclude Include="GameProcess\GameWnd.h" />
+    <ClInclude Include="GameProcess\GroupPopWnd.h" />
+    <ClInclude Include="GameProcess\GroupWnd.h" />
+    <ClInclude Include="GameProcess\GuildMasterWnd.h" />
+    <ClInclude Include="GameProcess\GuildWnd.h" />
+    <ClInclude Include="GameProcess\HorseWnd.h" />
+    <ClInclude Include="GameProcess\Interface.h" />
+    <ClInclude Include="GameProcess\InventoryWnd.h" />
+    <ClInclude Include="GameProcess\Item.h" />
+    <ClInclude Include="GameProcess\LightFog.h" />
+    <ClInclude Include="GameProcess\Magic.h" />
+    <ClInclude Include="GameProcess\MapHandler.h" />
+    <ClInclude Include="GameProcess\NPCWnd.h" />
+    <ClInclude Include="GameProcess\OptionWnd.h" />
+    <ClInclude Include="GameProcess\Particle.h" />
+    <ClInclude Include="GameProcess\QuestWnd.h" />
+    <ClInclude Include="GameProcess\SprDfn.h" />
+    <ClInclude Include="GameProcess\StatusWnd.h" />
+    <ClInclude Include="GameProcess\StoreWnd.h" />
+    <ClInclude Include="GameProcess\WeatherEffect.h" />
+    <ClInclude Include="GFun.h" />
+    <ClInclude Include="LoginProcess\Common\BMWnd.h" />
+    <ClInclude Include="LoginProcess\Common\define.h" />
+    <ClInclude Include="LoginProcess\Common\typedef.h" />
+    <ClInclude Include="LoginProcess\Intro\LoginAvi.h" />
+    <ClInclude Include="LoginProcess\LoginProcess.h" />
+    <ClInclude Include="LoginProcess\Login\Login.h" />
+    <ClInclude Include="LoginProcess\New Account\NewAccount.h" />
+    <ClInclude Include="LoginProcess\Patch.h" />
+    <ClInclude Include="LoginProcess\Select Srv\SelectSrv.h" />
+    <ClInclude Include="Sound\BMMP3.h" />
+    <ClInclude Include="Sound\MirSound.h" />
+    <ClInclude Include="Sound\SBuffer.h" />
+    <ClInclude Include="Sound\Sound.h" />
+    <ClInclude Include="Sound\TypeDef.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Mir2Ex.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="WindHorn\WindHorn.vcxproj">
+      <Project>{29d20a08-80e7-4c7d-aa54-92152bcd2519}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

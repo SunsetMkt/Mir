@@ -1,0 +1,132 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: WindHorn - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP230D.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /FR"Debug/" /Fp"Debug/WindHorn.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"I:\传奇\真正的传奇2客户端和服务端的源码 - 副本\LegendOfMir3_clint\WindHorn\RegHandler.cpp"
+"I:\传奇\真正的传奇2客户端和服务端的源码 - 副本\LegendOfMir3_clint\WindHorn\WHDefProcess.cpp"
+"I:\传奇\真正的传奇2客户端和服务端的源码 - 副本\LegendOfMir3_clint\WindHorn\WHDXGraphic.cpp"
+"I:\传奇\真正的传奇2客户端和服务端的源码 - 副本\LegendOfMir3_clint\WindHorn\WHImage.cpp"
+"I:\传奇\真正的传奇2客户端和服务端的源码 - 副本\LegendOfMir3_clint\WindHorn\WHSurface.cpp"
+"I:\传奇\真正的传奇2客户端和服务端的源码 - 副本\LegendOfMir3_clint\WindHorn\WHWilImage.cpp"
+"I:\传奇\真正的传奇2客户端和服务端的源码 - 副本\LegendOfMir3_clint\WindHorn\WHWilTexture.cpp"
+"I:\传奇\真正的传奇2客户端和服务端的源码 - 副本\LegendOfMir3_clint\WindHorn\WHWindow.cpp"
+"I:\传奇\真正的传奇2客户端和服务端的源码 - 副本\LegendOfMir3_clint\WindHorn\D3DCommon\d3dmath.cpp"
+"I:\传奇\真正的传奇2客户端和服务端的源码 - 副本\LegendOfMir3_clint\WindHorn\D3DCommon\d3dtextr.cpp"
+"I:\传奇\真正的传奇2客户端和服务端的源码 - 副本\LegendOfMir3_clint\WindHorn\D3DCommon\d3dutil.cpp"
+"I:\传奇\真正的传奇2客户端和服务端的源码 - 副本\LegendOfMir3_clint\WindHorn\D3DCommon\ddutil.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP230D.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP230E.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /FR"Debug/" /Fp"Debug/WindHorn.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"I:\传奇\真正的传奇2客户端和服务端的源码 - 副本\LegendOfMir3_clint\WindHorn\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP230E.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP230F.tmp" with contents
+[
+/nologo /out:"Debug\WindHorn.lib" 
+".\Debug\RegHandler.obj"
+".\Debug\StdAfx.obj"
+".\Debug\WHDefProcess.obj"
+".\Debug\WHDXGraphic.obj"
+".\Debug\WHImage.obj"
+".\Debug\WHSurface.obj"
+".\Debug\WHWilImage.obj"
+".\Debug\WHWilTexture.obj"
+".\Debug\WHWindow.obj"
+".\Debug\d3dmath.obj"
+".\Debug\d3dtextr.obj"
+".\Debug\d3dutil.obj"
+".\Debug\ddutil.obj"
+]
+Creating command line "link.exe -lib @C:\Users\ADMINI~1\AppData\Local\Temp\RSP230F.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(24) : error C2146: syntax error : missing ';' before identifier 'ddDeviceDesc'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(24) : error C2501: 'D3DDEVICEDESC7' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(24) : error C2501: 'ddDeviceDesc' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(34) : error C2143: syntax error : missing ';' before '*'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(34) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(34) : error C2501: 'pddsdModes' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(61) : error C2146: syntax error : missing ';' before identifier 'm_pD3D'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(61) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(61) : error C2501: 'm_pD3D' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(62) : error C2146: syntax error : missing ';' before identifier 'm_pDD'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(62) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(62) : error C2501: 'm_pDD' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(63) : error C2146: syntax error : missing ';' before identifier 'm_pd3dDevice'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(63) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(63) : error C2501: 'm_pd3dDevice' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(64) : error C2146: syntax error : missing ';' before identifier 'm_pddsFrontBuffer'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(64) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(64) : error C2501: 'm_pddsFrontBuffer' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(65) : error C2146: syntax error : missing ';' before identifier 'm_pddsBackBuffer'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(65) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(65) : error C2501: 'm_pddsBackBuffer' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(66) : error C2146: syntax error : missing ';' before identifier 'm_pddsZBuffer'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(66) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(66) : error C2501: 'm_pddsZBuffer' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(110) : error C2146: syntax error : missing ';' before identifier 'GetDirectDraw'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(110) : error C2433: 'LPDIRECTDRAW7' : 'inline' not permitted on data declarations
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(110) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(110) : warning C4183: 'GetDirectDraw': member function definition looks like a ctor, but name does not match enclosing class
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(111) : error C2146: syntax error : missing ';' before identifier 'GetDirect3D'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(111) : error C2433: 'LPDIRECT3D7' : 'inline' not permitted on data declarations
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(111) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(111) : warning C4183: 'GetDirect3D': member function definition looks like a ctor, but name does not match enclosing class
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(112) : error C2146: syntax error : missing ';' before identifier 'Get3DDevice'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(112) : error C2433: 'LPDIRECT3DDEVICE7' : 'inline' not permitted on data declarations
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(112) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(112) : warning C4183: 'Get3DDevice': member function definition looks like a ctor, but name does not match enclosing class
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(113) : error C2146: syntax error : missing ';' before identifier 'GetFrontBuffer'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(113) : error C2433: 'LPDIRECTDRAWSURFACE7' : 'inline' not permitted on data declarations
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(113) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(113) : warning C4183: 'GetFrontBuffer': member function definition looks like a ctor, but name does not match enclosing class
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(114) : error C2146: syntax error : missing ';' before identifier 'GetBackBuffer'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(114) : error C2433: 'LPDIRECTDRAWSURFACE7' : 'inline' not permitted on data declarations
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(114) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(114) : warning C4183: 'GetBackBuffer': member function definition looks like a ctor, but name does not match enclosing class
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(118) : error C2061: syntax error : identifier 'LPDIRECTDRAWSURFACE7'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(128) : error C2061: syntax error : identifier 'LPDIRECTDRAWSURFACE7'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(129) : error C2061: syntax error : identifier 'LPDIRECTDRAWSURFACE7'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(129) : error C2535: 'void __thiscall CWHDXGraphicWindow::PutsHan(void)' : member function already defined or declared
+        i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(128) : see declaration of 'PutsHan'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(131) : error C2061: syntax error : identifier 'LPDIRECTDRAWSURFACE7'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(149) : error C2061: syntax error : identifier 'LPDIRECTDRAWSURFACE7'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whdxgraphic.h(155) : error C2061: syntax error : identifier 'LPDIRECTDRAWSURFACE7'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\wh3dinit.h(25) : error C2146: syntax error : missing ';' before identifier 'm_pd3dDevice'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\wh3dinit.h(25) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\wh3dinit.h(25) : error C2501: 'm_pd3dDevice' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\wh3dinit.h(31) : error C2146: syntax error : missing ';' before identifier 'm_mtrl'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\wh3dinit.h(31) : error C2501: 'D3DMATERIAL7' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\wh3dinit.h(31) : error C2501: 'm_mtrl' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whsurface.h(8) : error C2146: syntax error : missing ';' before identifier 'm_pDDS'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whsurface.h(8) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whsurface.h(8) : error C2501: 'm_pDDS' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whsurface.h(12) : error C2629: unexpected 'class CWHSurface ('
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whsurface.h(12) : error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whsurface.h(16) : error C2061: syntax error : identifier 'LPDIRECTDRAW7'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whsurface.h(20) : error C2146: syntax error : missing ';' before identifier 'GetSurface'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whsurface.h(20) : error C2433: 'LPDIRECTDRAWSURFACE7' : 'inline' not permitted on data declarations
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whsurface.h(20) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whsurface.h(20) : warning C4183: 'GetSurface': member function definition looks like a ctor, but name does not match enclosing class
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whwiltexture.h(20) : error C2146: syntax error : missing ';' before identifier 'D3DWILTextr_GetSurface'
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whwiltexture.h(20) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+i:\传奇\真正的传奇2客户端和服务端的源码 - 副本\legendofmir3_clint\windhorn\whwiltexture.h(20) : fatal error C1004: unexpected end of file found
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+Mir2EI.exe - 64 error(s), 6 warning(s)
+</pre>
+</body>
+</html>
