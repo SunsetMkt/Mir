@@ -1,0 +1,69 @@
+文件结构吗？
+/*
+新的mir3版的wil文件头，28字节
+在文件开始处偏移24个字节的地方是本库文件里图像的数量。
+*/
+typedef struct tagNEWWILFILEHEADER
+{
+SHORT shComp; //用于压缩的数据 偏移 0
+CHAR szTitle[20]; //描述性字串 偏移 2
+SHORT shVer; //版本号 偏移 22
+INT nImageCount; //图片数量 偏移 24
+}NEWWILFILEHEADER, *LPNEWWILFILEHEADER;   
+
+/*
+新的mir3版wil文件中的屏幕点的信息结构 17字节，增加了影子特性，多用了5个字节。
+有多少个图像，就有多少个图像信息块
+*/
+typedef struct tagNEWWILFILEIMAGEINFO
+{
+SHORT shWidth; //图像宽度，以瓷砖数量表示
+SHORT shHeight; //图像高度，以瓷砖数量表示
+SHORT shPX; //每片瓷砖x方向的像素
+SHORT shPY; //每片瓷砖y方向的像素
+CHAR bShadow; //影子，这是新版增加的特性  
+SHORT shShadowPX; //影子x方向的像素，这是新版增加的特性
+SHORT shShadowPY; //影子y方向的像素，这是新版增加的特性
+DWORD dwImageLength; //图像的长度
+}NEWWILIMAGEINFO, *LPNEWWILIMAGEINFO;
+
+  标注红色的地方不对，那两个值是图片对中心坐标的偏移量，作用玩过传奇的都知道，比如一把屠龙，坐标对位就应该将它放在人物的手里，这个信息就是拿来对位的。
+
+  仍然紧接上文，采用DMon-1.wil文件作为例子：
+
+前28字节不分析了，Wil的文件头。紧接着的17字节是从0x1C位置处开始的，注意这个0x1C是根据对应DMon-1.wix索引文件来判断的。根据DMon-1.wix的第一个索引指向的位置就是0x1C，所以在此找到对应的第一张图片的相关信息。50 00，46 00是图像大小即80*70。后面的F0 FF,E1 FF实际上是负数-16，-31
+
+
+33 07 00 D4 EF这5个字节没有仔细研究，估计和fsfool说得差不多吧。后面的DWORD是关键，94 0A 00 00，解释是dwImageLength; //图像的长度。这个破玩意儿害老子研究半天，直到今天仔细看了WHImage类才搞清楚，总算是所有的数据都对上了。请看dwImageLength的定义：
+
+m_dwImageLength = m_wWidth*m_wHeight*sizeof(WORD);
+
+  可见dwImageLength就是图片的长*高的2倍。MD，我以前算总是对不上就是没有乘以2造成的。现在来算一下94 0A 00 00就是2708，再倍2得到5416，即0x1528，由于本图片首地址（包含图片头）偏移在0x1C，而实际数据在0x2C所以结束位置在2C+1528=1554。
+
+  再结合上一篇文章，在wix文件中的第一个图片偏移量是1C 00 00 00，接着的第二个是55 15 00 00，可见第二个图片在Wil文件中的偏移量是0x1555。而第一个文件的结束位置正好是0x1554，完全能对应上。
+
+  Wil文件的结构就已经非常之清楚了。比较遗憾的是，我最终还是没有成功把数据直接拷到BMP中，根据我的研究，发现这个数据量的大小根本不是80*70的16bit位图的大小，至少少了一半的数据。
+
+
+
+
+
+
+
+首先是Wix文件的分析，泄露的源码载入的文件都是新格式，不是盛大经典热血传奇的文件格式。先看看Wix格式在程序中的定义：
+
+typedef struct tagNEWWIXFILEIMAGEINFO  
+{
+CHAR szTitle[20];
+INT nIndexCount;
+INT* pnPosition;
+}NEWWIXIMAGEINFO, *LPNEWWIXIMAGEINFO;
+
+  很明显，前24bytes是20bytes的标题或者叫做字符串，紧接着是4bytes的图片总数，然后就是图片的偏移量了。用UltraEdit打开DMon-1.wix，观察数据，头数据和紧接着的一段数据如下所示：
+
+
+ 前20字节全为00 ，然后的4字节是F4 10 00 00转换为10进制就是4340和对应的Wil文件内含的图片数目能对上（用Wil编辑器能验证）。后边开始的每4字节INT*就是图片的偏移量了。按照规律，总的Wix文件大小应该为20+4+4*4340=17384字节，和实际情况吻合。
+
+
+
+这些是我搜到的别人研究的资料，大家看看，有什么办法吗？

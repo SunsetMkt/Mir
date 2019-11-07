@@ -1,0 +1,77 @@
+传奇3地图文件格式2009年03月10日 星期二 13:04地图格式
+
+
+
+/// @brief 地图文件头
+
+typedef struct tagMAPFILEHEADER
+
+{
+
+    CHAR   szDesc[20];       // 公司名称
+
+    SHORT shVer;            // 版本
+
+    SHORT shWidth;          // 地图宽度
+
+    SHORT shHeight;         // 地图高度
+
+    CHAR   cEventFileIdx;    // 事件文件索引
+
+    CHAR   cFogColor;        // 背景颜色
+
+}MAPFILEHEADER, *LPMAPFILEHEADER;
+
+
+
+
+/// @brief 瓷砖信息
+
+typedef struct tagTILEINFO
+
+{
+
+    CHAR   cFileIdx;         // 文件索引
+
+    SHORT shTileIdx;        // 瓷砖索引
+
+}TILEINFO, *LPTILEINFO;
+
+
+
+
+/// @brief 地图单元格信息 (客户端的格式)
+
+typedef struct tagCELLINFO
+
+{
+
+    BYTE   bFlag;            // 障碍层
+
+    BYTE   bObj1Ani;         // 动画物体1
+
+    BYTE   bObj2Ani;         // 动画物体2
+
+    WORD   bFileIdx;         // 文件索引   // BYTE   bFileIdx;
+
+    WORD   wObj1;            // 物体1
+
+    WORD   wObj2;            // 物体2
+
+    WORD   bDoorIdx;         // 大门索引   // BYTE   bDoorIdx;
+
+    BYTE   bDoorOffset;      // 大门偏移
+
+    WORD   wLigntNEvent;     // 光线
+
+}CELLINFO, *LPCELLINFO;
+
+
+
+
+绘制地图的时候是这样的
+
+【1】绘制瓷砖
+
+【2】绘制物体层，物体层可能是建筑物或者地表
+ 

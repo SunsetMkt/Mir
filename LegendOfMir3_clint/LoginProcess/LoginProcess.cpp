@@ -76,8 +76,8 @@ void CLoginProcess::Load(void)
 //	int i;
 	int nSrvCount;
 
-	m_Image.NewLoad(IMAGE_INTERFACE_1, TRUE, TRUE);
-	m_Image2.NewLoad(IMAGE_INTERFACE_2, TRUE, TRUE);
+	//m_Image.NewLoad(IMAGE_INTERFACE_1, TRUE, TRUE);
+	//m_Image2.NewLoad(IMAGE_INTERFACE_2, TRUE, TRUE);
 
 	ZeroMemory(g_xChatEditBox.m_szInputMsg,sizeof(g_xChatEditBox.m_szInputMsg));
 	pPatch = new CPatch;
